@@ -47,7 +47,7 @@ To avoid duplicated code, the `WorkoutPlanInterpreter` uses a central method for
 ## Design Patterns:
 In addition to the Strategy Pattern, the implementation also leverages the Builder and Interpreter patterns.
 
-* **Strategy Pattern**: This pattern is used to encapsulate different workout strategies (e.g., CardioStrategy, MuscleBuildingStrategy). By defining a family of algorithms (workout types) and making them interchangeable, the WorkoutPlanInterpreter can easily delegate the logic to the appropriate strategy. This approach allows new workout types to be added without changing the core functionality, ensuring flexibility and scalability.
+* **Strategy Pattern**: This pattern is used to encapsulate different workout strategies (e.g., `CardioStrategy`, `MuscleBuildingStrategy`). By defining a family of algorithms (workout types) and making them interchangeable, the `WorkoutPlanInterpreter` can easily delegate the logic to the appropriate strategy. This approach allows new workout types to be added without changing the core functionality, ensuring flexibility and scalability.
 
 * **Builder Pattern**: The Builder Pattern is utilized to create complex workout plans step by step, focusing on constructing the workout details such as type, intensity, and required equipment. This pattern helps separate the construction of the workout plan from its representation, allowing for easier creation and modification of different workout plans. It also makes the system more flexible, as different plans can be built by specifying different combinations of attributes.
 
