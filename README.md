@@ -51,7 +51,7 @@ In addition to the Strategy Pattern, the implementation also leverages the Build
 
 * **Builder Pattern**: The Builder Pattern is utilized to create complex workout plans step by step, focusing on constructing the workout details such as type, intensity, and required equipment. This pattern helps separate the construction of the workout plan from its representation, allowing for easier creation and modification of different workout plans. It also makes the system more flexible, as different plans can be built by specifying different combinations of attributes.
 
-* **Interpreter Pattern**: The Interpreter Pattern is used for interpreting workout types and intensity levels. The WorkoutPlanInterpreter class acts as the interpreter, processing input strings (e.g., "cardio", "beginner") and translating them into corresponding workout strategies or descriptions. This pattern is useful when the input has a specific structure or grammar, making it easier to interpret various combinations and ensure that the correct strategy or description is returned.
+* **Factory Method Pattern:**: The Factory Method Pattern is used for dynamically creating workout strategies based on the workout type. The `WorkoutPlanInterpreter` class acts as the factory, interpreting input strings (e.g., `"cardio"`, `"muscle"`, `"weightloss"`) and returning the appropriate `WorkoutStrategy` instance. This ensures loose coupling by delegating the responsibility of instantiating specific strategies to the factory method, making the system more extensible and maintainable.
 
 # Maven Commands
 
